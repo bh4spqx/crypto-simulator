@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Simulator</title>
+</head>
+<body>
+    <h1>Welcome to the Crypto Simulator!</h1>
+    <button onclick="generateWallet()">Create Mock Wallet</button>
+    <div id="display"></div>
+
+    <script>
+        function generateWallet() {
+            const address = "sim_0x" + Math.random().toString(16).substring(2, 10);
+            document.getElementById('display').innerHTML = 
+                "<p><strong>Your Glass Box Address:</strong> " + address + "</p>" +
+                "<p><strong>Balance:</strong> 1.00 Simulated BTC</p>";
+        }
+    </script>
+</body>
+</html>
